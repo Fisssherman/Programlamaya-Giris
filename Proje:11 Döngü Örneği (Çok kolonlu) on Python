@@ -1,0 +1,38 @@
+kolon1lıst=[]
+kolon2lıst=[]
+kolon3lıst=[]
+kolon4lıst=[]
+
+
+
+#-----------------------------------------------------------
+for kolon1 in range (1,100):
+    if kolon1%15 == 0:
+        kolon1lıst.append(kolon1)
+
+#-----------------------------------------------------------
+for kolon2 in range(1,31):
+    if kolon2%5 == 0:
+        kolon2lıst.append(kolon2)
+#-----------------------------------------------------------
+kolon3=0
+eksıltıcı=0
+while eksıltıcı <=50:
+    kolon3=100-eksıltıcı
+    eksıltıcı += 1
+    if kolon3%10==0:
+        kolon3lıst.append(kolon3)
+#-----------------------------------------------------------
+x=1
+kolon4 =0
+while kolon4 <64:
+    kolon4=2**x
+    x+=1
+    kolon4lıst.append(kolon4)
+#-----------------------------------------------------------
+
+p=0
+
+while p <= 5:
+    print(kolon1lıst[p],kolon2lıst[p],kolon3lıst[p],kolon4lıst[p])
+    p+=1
