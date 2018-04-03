@@ -1,0 +1,9 @@
+sınır=int(input("Sayı giriniz :"))
+sayac=1
+a=1
+b=1
+
+while sayac<sınır:
+    a,b=b,a+b
+    print(a)
+    sayac+=1
